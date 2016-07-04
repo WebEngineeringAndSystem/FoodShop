@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>项目实战-pc端固定布局</title>
+<link rel="stylesheet" href="css/basic.css" />
+<link rel="stylesheet" href="css/column.css" />
+</head>
+
+
+<body>
+<header id="header">
+	<div class="sec-center">
+    	<h1 class="h1-logo">飘城旅行社</h1>
+        <nav class="link">
+        	<h2 class="none">网站导航</h2>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li class="active"><a href="information.html">美食资讯</a></li>
+                <li><a href="###">网上订购</a></li>
+                <li><a href="###">订单查询</a></li>
+                <li><a href="###">网站简介</a></li>
+            </ul>
+        </nav> 
+    </div>
+</header>
+
+<div id="headline">
+	<div class="center">
+		<hgroup>
+			<h2>美食资讯</h2>
+			<h3>介绍各种最新美食信息、资讯要闻、美食攻略等</h3>	
+		</hgroup>
+	</div>
+</div>
+
+<div id="container">
+	<aside class="sidebar">
+		<div>
+        	<h2>菜品推荐</h2>
+            <div class="tag">
+            <ul>
+					<li><a href="###">红烧排骨</a></li>
+					<li><a href="###">红烧鱼</a></li>
+					<li><a href="###">卤猪耳</a></li>
+					<li><a href="###">手抓肉</a></li>
+					<li><a href="###">四喜丸子</a></li>
+					<li><a href="###">玉米排骨</a></li>
+					<li><a href="###">麻婆豆腐</a></li>
+					<li><a href="###">红烧肉</a></li>
+					<li><a href="###">北京烤鸭</a></li>
+					<li><a href="###">可乐鸡翅</a></li>
+					<li><a href="###">白斩鸡</a></li>
+					<li><a href="###">干煸豆角</a></li>
+					<li><a href="###">鱼香肉丝</a></li>
+					<li><a href="###">宫保鸡丁</a></li>
+					<li><a href="###">诸葛烤鱼</a></li>
+					<li><a href="###">剁椒全鱼</a></li>
+					<li><a href="###">火焰山</a></li>
+					<li><a href="###">手撕包菜</a></li>
+					<li><a href="###">椒盐蘑菇</a></li>
+					<li><a href="###">京酱肉丝</a></li>
+					<li><a href="###">粉蒸肉</a></li>
+				</ul>
+            </div>
+        </div>
+        <div>
+        
+        </div>
+        <div>
+        
+        </div>
+	</aside>
+	<div class="list">
+    	<div class="img">
+        	<img src="img/红烧肉.jpg" alt="红烧肉"/><br />
+           	<a href="###">添加到购物车</a>
+            <a href="javascript:history.go(-1)">返回</a>
+        </div>
+        
+        <div class="wenzi">
+			<p><span>编号：</span><%=goodsClass.getGoodsId() %></p>
+			<p><span>名称：</span><%=goodsClass.getGoodsName() %></p>
+            <p><span>食材：</span><%=goodsClass.getGoodsmaterial() %></p>
+            <p><span>做法：</span><%=goodsClass.getGoodsPackage() %></p>
+            <p><span>特点：</span><%=goodsClass.getGoodsLanguage() %></p>
+            <p><span>价格：</span><%=goodsClass.getGoodsPrice() %></p>
+            <p><span>商品积分：</span><%=goodsClass.getGoodsCent() %></p>
+            <p><span>配送范围：</span><%=goodsClass.getGoodsScope() %></p>
+            <p><span>适用场合：</span><%=goodsClass.getGoodsPlace() %></p>
+            <p><span>商品状态：</span><%=goodsClass.getGoodsHabitus() %></p>
+            <p><span>商品类别：</span><%=goodsClass.getSortName() %></p>
+        </div>
+	</div>
+</div>
+
+<footer id="footer">
+	<div class="top">
+    	<div class="block">
+        	<h2>合作伙伴</h2>
+			<hr>
+        	<ul>
+				<li>美团外卖</li>
+				<li>百度外卖</li>
+				<li>饿了么</li>
+				<li>百度糯米</li>
+			</ul>
+        </div>
+        <div class="block">
+        	<h2>订餐FAQ</h2>
+			<hr>
+			<ul>
+				<li>怎么订餐？</li>
+				<li>多久送到？</li>
+				<li>饭菜味道怎么样？</li>
+				<li>降价如何通知？</li>
+				<li>怎么评价？</li>
+			</ul>
+        </div>
+        <div class="block">
+        <h2>联系方式</h2>
+			<hr>
+			<ul>
+				<li>微博：weibo.com/Web</li>
+				<li>邮件：Web@Web.com</li>
+				<li>地址：西安电子科技大学</li>
+			</ul>
+        </div>
+    </div>
+    
+    <div class="bottom">
+    Copyright © WEB Web订餐| 陕ICP 备123456789号 | 经营许可证：Y-CW-EB12345
+    </div>
+</footer>
+</body>
+</html>
